@@ -4,74 +4,84 @@ import { useState } from "react"
 import { Button } from "../components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card"
 import { Badge } from "../components/ui/badge"
-import { MessageCircle, Github, Linkedin, Mail, BookOpen, Code, Trophy } from "lucide-react"
+import { MessageCircle, Github, Linkedin, Mail, BookOpen, Code } from "lucide-react"
 import ChatWidget from "../components/chat-widge"
 
 export default function Portfolio() {
   const [isChatOpen, setIsChatOpen] = useState(false)
 
-  const projects = [
-    {
-      title: "Machine Learning Image Classifier",
-      description: "Built a CNN model to classify images with 92% accuracy using TensorFlow and Python.",
-      tech: ["Python", "TensorFlow", "OpenCV", "Jupyter"],
-      status: "Completed",
-    },
-    {
-      title: "Student Management System",
-      description: "Full-stack web application for managing student records with CRUD operations.",
-      tech: ["React", "Node.js", "MongoDB", "Express"],
-      status: "In Progress",
-    },
-    {
-      title: "Data Analysis Dashboard",
-      description: "Interactive dashboard for visualizing sales data with real-time updates.",
-      tech: ["Python", "Pandas", "Plotly", "Streamlit"],
-      status: "Completed",
-    },
-  ]
+const projects = [
+  {
+    title: "Air-Drawing to Image Generator",
+    description: "Developed a gesture recognition system where users draw in the air, captured via webcam, and images are generated using Gemini, CvZone, and NVIDIA AI Generator.",
+    tech: ["Python", "OpenCV", "Gemini", "CvZone", "NVIDIA AI"],
+    status: "Completed",
+  },
+  {
+    title: "2nd Year Group Project - Project Management System",
+    description: "Designed and built a project management system for UCSC 2nd year group project, including task tracking, deadlines, and member collaboration.",
+    tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    status: "Completed",
+  },
+  {
+    title: "Movie App (Mobile)",
+    description: "Mobile app to search movies, view trailers, descriptions, box office data, and ratings. Includes a 'mark as watched' feature.",
+    tech: ["React Native", "Expo", "TMDB API"],
+    status: "Completed",
+  },
+  {
+    title: "Lora Chemicals - Inventory Management System",
+    description: "Comprehensive inventory system for Lora Chemicals, covering supplier input to customer delivery. Features batch tracking, sales rep management, and financial reporting.",
+    tech: ["React", "Spring Boot", "PostgreSQL"],
+    status: "In Progress",
+  },
+];
+
 
   const certificates = [
     {
-      title: "Machine Learning Specialization",
-      issuer: "Coursera - Stanford University",
-      date: "2024",
-      type: "Online Course",
-    },
+      title: "Supervised Machine Learning: Regression and Classification",
+      issuer: "Coursera - DeepLearning.AI",
+      date: "2025",
+      type: "Online Course"
+    }
+    ,
     {
-      title: "Python for Data Science",
-      issuer: "IBM",
-      date: "2023",
-      type: "Professional Certificate",
-    },
+      title: "Docker for the Absolute Beginner",
+      issuer: "KodeKloud",
+      date: "2025",
+      type: "Online Course"
+    }
+    ,
     {
-      title: "AWS Cloud Practitioner",
-      issuer: "Amazon Web Services",
+      title: "AWS 101 - Introduction to Cloud Computing",
+      issuer: "Amazon Web Services (AWS)",
       date: "2024",
-      type: "Cloud Certification",
-    },
+      type: "Online Course"
+    }
+
   ]
 
-  const achievements = [
-    {
-      title: "University Coding Competition",
-      position: "2nd Place",
-      date: "2024",
-      description: "Algorithmic problem solving competition",
-    },
-    {
-      title: "Hackathon Winner",
-      position: "1st Place",
-      date: "2023",
-      description: "24-hour hackathon focused on AI solutions",
-    },
-    {
-      title: "Dean's List",
-      position: "Academic Excellence",
-      date: "2023-2024",
-      description: "Maintained GPA above 3.8",
-    },
-  ]
+  // const achievements = [
+  //   {
+  //     title: "University Coding Competition",
+  //     position: "2nd Place",
+  //     date: "2024",
+  //     description: "Algorithmic problem solving competition",
+  //   },
+  //   {
+  //     title: "Hackathon Winner",
+  //     position: "1st Place",
+  //     date: "2023",
+  //     description: "24-hour hackathon focused on AI solutions",
+  //   },
+  //   {
+  //     title: "Dean's List",
+  //     position: "Academic Excellence",
+  //     date: "2023-2024",
+  //     description: "Maintained GPA above 3.8",
+  //   },
+  // ]
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" })
@@ -149,9 +159,9 @@ export default function Portfolio() {
                 <Badge className="bg-green-900 text-green-100 px-4 py-2">
                   Web Development
                 </Badge>
-                <Badge className="bg-orange-900 text-orange-100 px-4 py-2">
+                {/* <Badge className="bg-orange-900 text-orange-100 px-4 py-2">
                   Seeking Internship
-                </Badge>
+                </Badge> */}
               </div>
             </div>
           </div>
@@ -214,7 +224,7 @@ export default function Portfolio() {
       </section>
 
       {/* Achievements Section */}
-      <section id="achievements" className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+      {/* <section id="achievements" className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">Achievements & Competitions</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -235,7 +245,7 @@ export default function Portfolio() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8">
