@@ -62,7 +62,7 @@ async function handleSend() {
   }
 
   return (
-    <div className="fixed bottom-24 right-6 w-96 max-w-full bg-slate-800 rounded-xl shadow-lg z-50 p-4 border border-slate-700 flex flex-col">
+<div className="fixed bottom-24 right-6 left-auto md:left-auto md:right-6 mx-auto md:mx-0 w-11/12 sm:w-96 bg-slate-800 rounded-xl shadow-lg z-50 p-4 border border-slate-700 flex flex-col">
       {/* Header section with icon and close button */}
       <div className="flex justify-between items-center mb-2">
         <div className="flex items-center gap-2">
