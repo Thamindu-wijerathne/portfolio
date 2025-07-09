@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "../components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card"
 import { Badge } from "../components/ui/badge"
-import { MessageCircle, Github, Linkedin, Mail, BookOpen, Code } from "lucide-react"
+import { MessageCircle, Github, Linkedin, BookOpen, Code } from "lucide-react"
 import ChatWidget from "../components/chat-widge"
 
 export default function Portfolio() {
@@ -93,7 +93,7 @@ const projects = [
       <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-2xl font-bold text-cyan-400">Portfolio</div>
+            <div className="text-2xl font-bold text-cyan-400">Thamindu Wijerathne</div>
             <div className="hidden md:flex space-x-8">
               <button
                 onClick={() => scrollToSection("about")}
@@ -137,7 +137,7 @@ const projects = [
             <div className="w-32 h-32 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mx-auto mb-8 flex items-center justify-center">
               <Code className="w-16 h-16 text-white" />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Software Engineer</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">I'm Thamindu</h1>
             <p className="text-xl md:text-2xl text-cyan-400 mb-8">Passionate about Machine Learning & AI</p>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg text-slate-300 mb-8 leading-relaxed">
@@ -255,24 +255,31 @@ const projects = [
             I'm actively seeking internship opportunities and would love to discuss how I can contribute to your team.
           </p>
           <div className="flex justify-center gap-6">
-            <Button
-              className="bg-slate-700 border-slate-600 text-white hover:border-cyan-400 hover:text-cyan-400 border"
+            <a
+              href="https://github.com/Thamindu-wijerathne"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Github className="w-5 h-5 mr-2" />
-              GitHub
-            </Button>
-            <Button
-              className="bg-slate-700 border-slate-600 text-white hover:border-blue-400 hover:text-blue-400 border"
+              <Button
+                className="bg-slate-700 border-slate-600 text-white hover:border-cyan-400 hover:text-cyan-400 border"
+              >
+                <Github className="w-5 h-5 mr-2" />
+                GitHub
+              </Button>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/thamindu-wijerathne-a2a6a12a9"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Linkedin className="w-5 h-5 mr-2" />
-              LinkedIn
-            </Button>
-            <Button
-              className="bg-slate-700 border-slate-600 text-white hover:border-green-400 hover:text-green-400 border"
-            >
-              <Mail className="w-5 h-5 mr-2" />
-              Email
-            </Button>
+              <Button
+                className="bg-slate-700 border-slate-600 text-white hover:border-blue-400 hover:text-blue-400 border"
+              >
+                <Linkedin className="w-5 h-5 mr-2" />
+                LinkedIn
+              </Button>
+            </a>
           </div>
         </div>
       </section>
