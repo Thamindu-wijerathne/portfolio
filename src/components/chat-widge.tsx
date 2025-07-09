@@ -33,7 +33,7 @@ export default function ChatWidget({ onClose }: Props) {
 async function handleSend() {
   if (!input.trim()) return;
 
-  const userMessage = { from: "user", text: input };
+  const userMessage: Message = { from: "user", text: input };
   setMessages((msgs) => [...msgs, userMessage]);
   setInput("");
 
@@ -47,10 +47,10 @@ async function handleSend() {
       window.open(url, "_blank");
     }
 
-    const botMessage = { from: "bot", text: reply };
+    const botMessage: Message = { from: "bot", text: reply };
     setMessages((msgs) => [...msgs, botMessage]);
   } catch (error) {
-    const botMessage = { from: "bot", text: "Oops! AI service error." };
+    const botMessage: Message = { from: "bot", text: "Oops! AI service error." };
     setMessages((msgs) => [...msgs, botMessage]);
     console.error("Gemini error:", error);
   }
