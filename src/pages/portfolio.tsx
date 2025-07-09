@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "../components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card"
 import { Badge } from "../components/ui/badge"
-import { MessageCircle, Github, Linkedin, Mail, BookOpen, Code } from "lucide-react"
+import { MessageCircle, Github, Linkedin, BookOpen, Code } from "lucide-react"
 import ChatWidget from "../components/chat-widge"
 
 export default function Portfolio() {
