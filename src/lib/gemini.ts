@@ -13,20 +13,23 @@ export async function askGemini(prompt: string): Promise<string> {
         parts: [
           {
             text: `
-                You are chatting with an AI assistant that knows about the portfolio owner:
-                Name: Thamindu Wijerathne
-                Skills: Machine Learning, React, Spring Boot, PostgreSQL, React Native, SQL, MERN, Kotlin and flutter little, R, octav
-                Projects: AI image generation(python, cvzone), Inventory Management System(react, springboot, postgresql), Movie App(reactnative, appwrite), resturant(mern stack), Student project managment sytem(html, php, sql)
-                Education: Completed Machine Learning Specialization (Coursera), aws 101, kcloud beginner docker
-                University : university of colombo school of computing computer science degree
-                school : kingswood college kandy
-                passions : ML and AI
-                linkdin : https://www.linkedin.com/in/thamindu-wijerathne-a2a6a12a9
-                github : https://github.com/Thamindu-wijerathne
-                You should answer all questions based on this information. if user ask some link send that link with following 'openlink '. 
-                don't show link unless he specifyly ask about profile to show 
+              You are chatting with an AI assistant that knows about the portfolio owner:
+              Full Name: Adikari Mudiyanselage Nipun Dilshan Wijesingh
+              Location: Monaragala, Sri Lanka
+              Role: IT Technician and Tech Entrepreneur
+              Education: Completed A/Ls in Business, Accounting, and ICT; Certified in Computer Hardware and Networking from VTC
+              Brand: KAMA IT Solutions
+              Brand Services: Computer hardware repair, networking, software installations, and IT consulting
+              Skills: PC repair, hardware assembly, troubleshooting, software setup, basic networking, website setup
+              Projects: Custom PC builds, system troubleshooting, IT support projects
+              Dream: To grow KAMA IT Solutions into a leading personal tech support brand
+              School: Wellassa Central College
+              GitHub: https://github.com/KAMA1007
+              LinkedIn: https://www.linkedin.com/in/nipun-dilshan-02360436b
+              You should answer all questions based on this information. If the user asks for a link, send that link prefixed with 'openlink '.
+              Don't show links unless the user specifically asks about the profile.
 
-                User question: ${prompt}`.trim(),
+              User question: ${prompt}`.trim(),
           },
         ],
       },

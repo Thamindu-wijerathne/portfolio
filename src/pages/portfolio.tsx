@@ -40,20 +40,6 @@ const projects = [
 
   const certificates = [
     {
-      title: "Supervised Machine Learning: Regression and Classification",
-      issuer: "Coursera - DeepLearning.AI",
-      date: "2025",
-      type: "Online Course"
-    }
-    ,
-    {
-      title: "Docker for the Absolute Beginner",
-      issuer: "KodeKloud",
-      date: "2025",
-      type: "Online Course"
-    }
-    ,
-    {
       title: "AWS 101 - Introduction to Cloud Computing",
       issuer: "Amazon Web Services (AWS)",
       date: "2024",
@@ -93,7 +79,7 @@ const projects = [
       <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-2xl font-bold text-cyan-400">Thamindu Wijerathne</div>
+            <div className="text-2xl font-bold text-cyan-400">Nipun Dilshan</div>
             <div className="hidden md:flex space-x-8">
               <button
                 onClick={() => scrollToSection("about")}
@@ -137,14 +123,11 @@ const projects = [
             <div className="w-32 h-32 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mx-auto mb-8 flex items-center justify-center">
               <Code className="w-16 h-16 text-white" />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">I'm Thamindu</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">I'm Nipun</h1>
             <p className="text-xl md:text-2xl text-cyan-400 mb-8">Passionate about Machine Learning & AI</p>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-                I'm an undergraduate Computer Science student with a deep passion for machine learning and artificial
-                intelligence. Currently seeking internship opportunities to apply my skills in real-world projects and
-                contribute to innovative solutions. I love solving complex problems and building intelligent systems
-                that make a difference.
+I’m Nipun Dilshan, an IT technician passionate about computers and hardware. I dream of building my own brand that specializes in repairing and custom-building PCs. With hands-on experience in troubleshooting and assembling systems, I’m always looking to expand my skills and take on real-world challenges in the tech field.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <Badge className="bg-cyan-900 text-cyan-100 px-4 py-2">
@@ -256,7 +239,7 @@ const projects = [
           </p>
           <div className="flex justify-center gap-6">
             <a
-              href="https://github.com/Thamindu-wijerathne"
+              href="https://github.com/KAMA1007"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -269,7 +252,7 @@ const projects = [
             </a>
 
             <a
-              href="https://www.linkedin.com/in/thamindu-wijerathne-a2a6a12a9"
+              href="https://www.linkedin.com/in/nipun-dilshan-02360436b"
               target="_blank"
               rel="noopener noreferrer"
             >
