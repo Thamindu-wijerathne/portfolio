@@ -41,13 +41,13 @@ async function handleSend() {
     const reply = await askGemini(input);
 
     // Check if Gemini wants to open a link
-    const openMatch = reply.match(/openlink\s+(https?:\/\/[^\s]+)/i);
+    const openMatch = reply.text.match(/openlink\s+(https?:\/\/[^\s]+)/i);
     if (openMatch) {
       const url = openMatch[1];
       window.open(url, "_blank");
     }
 
-    const botMessage: Message = { from: "bot", text: reply };
+    const botMessage: Message = { from: "bot", text: reply.text };
     setMessages((msgs) => [...msgs, botMessage]);
   } catch (error) {
     const botMessage: Message = { from: "bot", text: "Oops! AI service error." };
