@@ -83,6 +83,9 @@ const projects = [
   //   },
   // ]
 
+  // if (!apiKey) throw new Error("Missing Gemini API key!");
+
+
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" })
   }
@@ -105,7 +108,7 @@ const projects = [
                 onClick={() => scrollToSection("projects")}
                 className="text-slate-300 hover:text-cyan-400 transition-colors"
               >
-                Projects
+                Projects 
               </button>
               <button
                 onClick={() => scrollToSection("certificates")}
